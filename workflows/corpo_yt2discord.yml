@@ -1,0 +1,15 @@
+on:
+  youtube:
+    channel_id:
+      - UCqnpIoJK11TXSWrfARavLXg
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: discord
+      uses: sebastianpopp/discord-action@releases/v1
+      with:
+        webhook: https://discord.com/api/webhooks/869959761402150932/GXKSCzskWWoi_yWjB0RkMxck-X_CM2eQzTMfquS6o8YCwe_9Uloup_WcTwYV4V5Xwf_5
+        message: ${{on.youtube.outputs.link}}
