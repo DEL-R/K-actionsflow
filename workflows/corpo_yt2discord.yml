@@ -2,6 +2,7 @@ on:
   youtube:
     channel_id:
       - UCqnpIoJK11TXSWrfARavLXg
+      - UCi5i3ClsTBxUXEHa51QafVQ
 
 jobs:
   deploy:
