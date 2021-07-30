@@ -3,8 +3,8 @@ on:
   weather:
     apiKey: 4c7ce8fce9ce689c38c7d5c059712efa
     params:
-      lat: 49.475
-      lon: 1.108
+      lat: 49.4753436
+      lon: 1.1073145
       units: metric
     every: 0
     timeZone: UTC+2
@@ -18,4 +18,4 @@ jobs:
         with:
           webhook: https://discord.com/api/webhooks/870574718263128094/PimvlpUQeu9q58mh0xc3KLjTExcj__YGWPIRZX7_9k-qRiosvk3oD7e6jvb2pOo8mvwJ
           message: |
-            La météo du jour : ${{on.weather.outputs.current.weather[0].description}} , ${{on.weather.outputs.daily[0].temp.min}}~${{on.weather.outputs.daily[0].temp.min}}°, ressenti ${{ on.weather.outputs.current.feels_like }}°, uv: ${{ on.weather.outputs.current.uvi }}
+            La météo du jour sur Bois-Guillaume: ${{on.weather.outputs.current.weather[0].description}}, Température extérieur ${{on.weather.outputs.daily[0].temp.min}}~${{on.weather.outputs.daily[0].temp.min}}°, Température ressentie ${{ on.weather.outputs.current.feels_like }}°
