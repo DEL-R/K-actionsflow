@@ -6,7 +6,7 @@ on:
       lat: 49.4753436
       lon: 1.1073145
       units: metric
-    every: 0
+    every: "0 7 * * 1-5" 
     timeZone: UTC+2
 jobs:
   notify:
