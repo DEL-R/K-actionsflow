@@ -7,7 +7,7 @@ on:
       lon: 1.1073145
       units: metric
     every: "0 7,14 * * *" 
-    timeZone: UTC+2
+    timeZone: UTC
 jobs:
   notify:
     name: Send notifications
