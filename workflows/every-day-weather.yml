@@ -1,4 +1,4 @@
-name: Send a telegram message abount today's weather every morning
+name: Send a Discord message abount today's weather every morning
 on:
   weather:
     apiKey: 4c7ce8fce9ce689c38c7d5c059712efa
